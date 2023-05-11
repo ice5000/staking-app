@@ -1,17 +1,21 @@
-import React from 'react'
-import Staking from './Component/Staking'
-import Postion from './Component/Postion'
-import Footer from './Component/Footer'
+import Staking from "./components/Staking";
+import Postion from "./components/Postion";
+import Footer from "./components/Footer";
+
+
+
 const App = () => {
+
+
   return (
-    <div>
-      <div className='space-y-5'>
-      <Staking />
-      <Postion />
-      <Footer />
+    <div className="min-h-screen flex">
+      <div className="space-y-16 lg:space-x-8 mx-auto w-full px-2 mt-6">
+        <Staking />
+        <Postion />
+        <Footer />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
